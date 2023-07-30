@@ -1,4 +1,5 @@
 import { Lesson } from './Lesson'
+import { LessonsMock } from './data/LessonsMock'
 
 export const SideBar = () => {
   return (
@@ -8,8 +9,9 @@ export const SideBar = () => {
       </span>
 
       <div className="flex flex-col gap-8">
-        <Lesson />
-        <Lesson />
+        {LessonsMock.map((lesson) => {
+          return <Lesson key={lesson.id} lesson={lesson} />
+        })}
       </div>
     </aside>
   )
