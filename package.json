@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
+    "@vime/core": "^5.4.1",
+    "@vime/react": "^5.4.1",
     "date-fns": "^2.30.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
